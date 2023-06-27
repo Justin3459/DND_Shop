@@ -5,7 +5,7 @@ import { Route, Routes, NavLink } from "react-router-dom";
 import Home from "./components/Home";
 import Weapons from "./components/Weapons";
 import Armor from "./components/Armor";
-
+import New from "./components/New";
 function App() {
   const [shop, setShop] = useState([]);
   
@@ -21,11 +21,13 @@ function App() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="weapons">Weapons</NavLink>
         <NavLink to="armor">Armor</NavLink>
+        <NavLink to="new">new</NavLink>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="*" element={<Home />}></Route>
         <Route path="weapons" element={<Weapons weapons={shop}/>}></Route>
         <Route path="armor" element={<Armor armor={""}/>}></Route>
+        <Route path="new" element={<New />}></Route>
       </Routes>
     </>
   );

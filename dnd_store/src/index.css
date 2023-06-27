@@ -16,3 +16,22 @@ code {
   background-color: grey;
   box-shadow: 5cm;
 }
+
+.NavCard {
+  background-color: brown;
+}
+
+.weaponLink {
+  background-color: grey;
+}
+
+.armorLink {
+  background-color: green;
+}
+nav {
+  list-style: none;
+  margin: 0 2 px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
