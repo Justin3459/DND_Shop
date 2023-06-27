@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {useState} from "react"
-import "./App.css";
 import { Route, Routes, NavLink } from "react-router-dom";
 import Home from "./components/Home";
 import Weapons from "./components/Weapons";
