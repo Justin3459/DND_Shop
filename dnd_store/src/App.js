@@ -13,7 +13,7 @@ function App() {
     .then((r)=>r.json())
     .then((data) =>{setShop(data.map((item)=>item))})
   },[])
-  
+  console.log(shop)
   return (
     <>
       <nav>

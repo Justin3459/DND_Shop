@@ -2,7 +2,6 @@ import React from "react";
 
 function Card(items) {
   const weaponArray = items.items.weapons;
-  console.log(weaponArray);
   const handleCard = weaponArray.map((item) => (
     <div key={item.id} className="card">
       <h1 className="cardName">{item.name}</h1>
