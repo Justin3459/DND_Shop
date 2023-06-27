@@ -9,6 +9,7 @@ function Weapons(weapons) {
     <div>
         <h1>{item.name}</h1>
         <p>Cost: {item.cost}</p>
+        <p>Damage: {item.damage}</p>
     </div>
     ) 
 return (
