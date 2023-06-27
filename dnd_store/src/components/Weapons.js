@@ -12,7 +12,7 @@ function Weapons(weapons) {
         <p>Damage: {item.damage}</p>
         <p>weight: {item.weight}</p>
         <p>properties: {item.properties}</p>
-
+        <p>type: {item.type}</p>
     </div>
     ) 
 return (
