@@ -8,7 +8,7 @@ function Weapons(weapons) {
     const handleCard = weaponArray.map((item) => 
     <div>
         <h1>{item.name}</h1>
-        
+        <p>Cost: {item.cost}</p>
     </div>
     ) 
 return (
