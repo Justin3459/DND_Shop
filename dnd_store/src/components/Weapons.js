@@ -11,6 +11,7 @@ function Weapons(weapons) {
         <p>Cost: {item.cost}</p>
         <p>Damage: {item.damage}</p>
         <p>weight: {item.weight}</p>
+        <p>properties: {item.properties}</p>
 
     </div>
     ) 
