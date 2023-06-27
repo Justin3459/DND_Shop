@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import {useState} from "react"
+import "./App.css";
+import { Route, Routes, NavLink } from "react-router-dom";
+import Home from "./components/Home";
+import Weapons from "./components/Weapons";
+import Armor from "./components/Armor";
 
 function App() {
+  const [shop, setShop] = useState([]);
+  
+  useEffect(()=>{
+    fetch("http://localhost:3000/shop")
+    .then((r)=>r.json())
+    .then((data) =>{setShop(data.map((item)=>item))})
+  },[])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="weapons">Weapons</NavLink>
+        <NavLink to="armor">Armor</NavLink>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="weapons" element={<Weapons weapons={shop}/>}></Route>
+        <Route path="armor" element={<Armor armor={""}/>}></Route>
+      </Routes>
+    </>
   );
 }
 
 export default App;
+

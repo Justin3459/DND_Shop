@@ -1,0 +1,8 @@
+to run
+    open repo for db.json and run json-server --watch db.json
+    in dnd_store repo run npm start and yes to use localhost3001
+
+goals
+    create json
+    fetch json data
+    use filter to get items under each category weapons/armor
