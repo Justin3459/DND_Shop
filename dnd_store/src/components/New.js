@@ -43,9 +43,9 @@ function New() {
         <select>
           <option>Simple Weapon</option>
           <option>Martial Weapon</option>
-          <option>Light Armor</option>
+          {/* <option>Light Armor</option>
           <option>Medium Armor</option>
-          <option>Heavy Armor</option>
+          <option>Heavy Armor</option> */}
         </select>
       </label>
       <button>Submit</button>
