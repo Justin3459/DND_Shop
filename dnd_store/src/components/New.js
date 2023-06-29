@@ -1,10 +1,23 @@
 import React from "react";
+import "./CSS/New.css";
 
 function New() {
-  // const onSubmit = (id)=> fetch(`https://localhost:3000/${id}`, {Method:POST}).then(r=>r.json()).then()
-  
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const formData = Object.fromEntries(new 
+        FormData(e.target))
+    fetch("http://localhost:3000/shop", {
+      method: "POST",
+      headers: {
+        "accept": "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+  };
+
   return (
-    <form className="newItemForm">
+    <form onSubmit={onSubmit} className="newItemForm">
       <label>
         Name:
         <input name="name"></input>
@@ -36,7 +49,6 @@ function New() {
         </select>
       </label>
       <button>Submit</button>
-      {/* <button onClick= {()=>handleSubmit(task.id)}>Submit</button> */}
     </form>
   );
 }
