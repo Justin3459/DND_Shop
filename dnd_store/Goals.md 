@@ -6,6 +6,11 @@ goals
     create json
     fetch json data
     use filter to get items under each category weapons/armor
+
+allow user to add new items
+    use modal
+    fetch patch/post
+    
 allow user to delete
     function Task ({task,onTaskComplete})
     //create function to make server call then delete passed id. then run onTaskComplete

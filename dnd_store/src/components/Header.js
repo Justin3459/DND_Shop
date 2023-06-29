@@ -14,7 +14,7 @@ function Header({shop, dialogRef}) {
     <header>
       <div>
         <h1> Item Store </h1>
-        <input input="search"></input>
+        {/* <input input="search"></input> */}
         <button onClick={handleModal}>Add</button>
       </div>
 

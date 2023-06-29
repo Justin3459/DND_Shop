@@ -4,7 +4,7 @@ function New() {
   // const onSubmit = (id)=> fetch(`https://localhost:3000/${id}`, {Method:POST}).then(r=>r.json()).then()
   
   return (
-    <form>
+    <form className="newItemForm">
       <label>
         Name:
         <input name="name"></input>
