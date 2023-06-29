@@ -17,7 +17,6 @@ function New({onFormSubmited}) {
     .then(r=>r.json())
     .then(responseForm => onFormSubmited(responseForm))
   };
-
   return (
     <form onSubmit={onSubmit} className="newItemForm">
       <label>
@@ -42,13 +41,17 @@ function New({onFormSubmited}) {
       </label>
       <label>
         Type:
-        <select>
+        <select name="type">
           <option>Simple Weapon</option>
           <option>Martial Weapon</option>
           {/* <option>Light Armor</option>
           <option>Medium Armor</option>
           <option>Heavy Armor</option> */}
         </select>
+      </label>
+      <label>
+        Image:
+        <input name="image"></input>
       </label>
       <button>Submit</button>
     </form>
