@@ -6,3 +6,14 @@ goals
     create json
     fetch json data
     use filter to get items under each category weapons/armor
+allow user to delete
+    function Task ({task,onTaskComplete})
+    //create function to make server call then delete passed id. then run onTaskComplete
+    const onDelete = (id) => fetch(`https://localhost:3000`, {method: DELETE}).then(()=> onTaskCompleted())
+    return (<FacnyCard> cardTitle={task.title}>
+        <p>{task.description}</p>
+        <menu>
+            <li>
+                //pass task.id on onClick to be passed into function
+                <button onClick={()=>onDelete(task.id)}>Done!</button>
+    )

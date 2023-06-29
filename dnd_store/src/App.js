@@ -13,9 +13,12 @@ function App() {
     .then((r)=>r.json())
     .then((data) =>{setShop(data.map((item)=>item))})
   },[])
-  console.log(shop)
   return (
     <>
+      <header>
+        <h1> Item Store </h1>
+
+      </header>
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="weapons">Weapons</NavLink>
