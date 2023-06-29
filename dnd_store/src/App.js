@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Header from "./components/Header";
 import New from "./components/New";
 
@@ -13,14 +13,13 @@ function App() {
       });
   }, []);
 
+  const dialogRef = useRef(null)
 
   return (
     <>
       <Header shop={shop}/>
-      <dialog open>
-        <New>
-
-        </New>
+      <dialog ref={dialogRef}>
+        <New/>
       </dialog>
     </>
   );

@@ -5,12 +5,16 @@ import Armor from "./Armor";
 import { Route, Routes, NavLink } from "react-router-dom";
 
 function Header({shop}) {
+    const handleModal = () => {
+        return console.log("modal button clicked")
+    }
   return (
     <>
     <header>
       <div>
         <h1> Item Store </h1>
         <input input="search"></input>
+        <button onClick={handleModal}>Add</button>
       </div>
 
       <nav>
