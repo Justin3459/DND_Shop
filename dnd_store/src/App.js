@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import { useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "./components/Header";
 import New from "./components/New";
 
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Header shop={shop}/>
+      <Header shop={shop} dialogRef={dialogRef}/>
       <dialog ref={dialogRef}>
         <New/>
       </dialog>

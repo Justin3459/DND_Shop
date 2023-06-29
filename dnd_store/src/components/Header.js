@@ -4,9 +4,10 @@ import Weapons from "./Weapons";
 import Armor from "./Armor";
 import { Route, Routes, NavLink } from "react-router-dom";
 
-function Header({shop}) {
+function Header({shop, dialogRef}) {
     const handleModal = () => {
-        return console.log("modal button clicked")
+        dialogRef.current.showModal()
+        console.log("modal button clicked")
     }
   return (
     <>

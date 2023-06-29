@@ -2,6 +2,7 @@ import React from "react";
 
 function New() {
   // const onSubmit = (id)=> fetch(`https://localhost:3000/${id}`, {Method:POST}).then(r=>r.json()).then()
+  
   return (
     <form>
       <label>
