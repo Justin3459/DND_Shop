@@ -10,7 +10,7 @@ function Card({items, handleDelete}) {
       <p>weight: {item.weight}</p>
       <p>properties: {item.properties}</p>
       <p>type: {item.type}</p>
-      <button onClick={handleDelete} value={item.id}>Delete</button>
+      <button onClick={()=>handleDelete(item.id)} value={item.id}>Delete</button>
     </section>
   ));
 
