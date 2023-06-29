@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <>
-      <Header shop={shop}></Header>
+      <Header shop={shop}/>
     </>
   );
 }
