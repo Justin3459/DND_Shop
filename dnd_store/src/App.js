@@ -18,7 +18,7 @@ function App() {
   const onCardAdd = (cardAdd) => setShop([...shop, cardAdd])
   return (
     <>
-      <Header shop={shop} dialogRef={dialogRef} setShopItems={setShop} />
+      <Header shop={shop} dialogRef={dialogRef} setShopItems={setShop} className="header"/>
       <dialog ref={dialogRef}>
         <New
           onFormSubmited={(newShopData) => {

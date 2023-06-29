@@ -18,11 +18,11 @@ function Header({ shop, dialogRef, setShopItems }) {
   };
   return (
     <>
-      <header>
-        <div>
-          <h1> Item Store </h1>
+      <header className="Header">
+        <div className="Title">
+          <h1 > Item Store </h1>
           {/* <input input="search"></input> */}
-          <button onClick={handleModal}>Add</button>
+          <button onClick={handleModal} className="modal">Add</button>
         </div>
 
         <nav>

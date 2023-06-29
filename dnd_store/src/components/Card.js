@@ -1,10 +1,12 @@
 import React from "react";
+import "./CSS/Card.css"
 
 function Card({items, handleDelete}) {
   const weaponArray = items;
   const handleCard = weaponArray.map((item) => (
     <section key={item.id} className="card">
       <h1 className="cardName">{item.name}</h1>
+      <img src={item.image} alt={item.name}></img>
       <p>Cost: {item.cost}</p>
       <p>Damage: {item.damage}</p>
       <p>weight: {item.weight}</p>

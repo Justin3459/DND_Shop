@@ -1,0 +1,24 @@
+.card {
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+    display: inline-block;
+    padding-right: 100px;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 105px;
+    text-align: center;
+}
+.card img {
+    height: auto;
+    width: 200px;
+}
+.card p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.card button {
+    height: auto;
+    width: 100px;    
+}
