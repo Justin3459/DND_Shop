@@ -4,6 +4,7 @@ import New from "./components/New";
 
 function App() {
   const [shop, setShop] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:3000/shop")
       .then((r) => r.json())
@@ -13,18 +14,19 @@ function App() {
   }, []);
 
   const dialogRef = useRef(null);
-
+  const onCardAdd = (cardAdd) => setShop([...shop, cardAdd])
   return (
     <>
       <Header shop={shop} dialogRef={dialogRef} />
       <dialog ref={dialogRef}>
         <New
-          onFormSubmited={() => {
-            dialogRef.current.close();
+          onFormSubmited={(newShopData) => {
+            dialogRef.current.close()
+            onCardAdd(newShopData);
           }}
+          onCardAdd={onCardAdd}
         />
       </dialog>
-      
     </>
   );
 }

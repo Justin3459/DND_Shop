@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React, { } from "react";
 import Home from "./Home";
 import Weapons from "./Weapons";
 // import Armor from "./Armor";
 import { Route, Routes, NavLink } from "react-router-dom";
 
-function Header({ shop }) {
-  const dialogRef = useRef(null);
+function Header({ shop, dialogRef }) {
+
   const handleModal = () => {
     dialogRef.current.showModal();
   };
