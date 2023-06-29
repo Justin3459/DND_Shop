@@ -9,7 +9,7 @@ function Header({ shop, dialogRef }) {
   const handleModal = () => {
     dialogRef.current.showModal();
   };
-
+  const handleDelete = (id) => console.log(id)
   return (
     <>
       <header>
@@ -27,7 +27,7 @@ function Header({ shop, dialogRef }) {
       </header>
       <Routes>
         <Route path="*" element={<Home />}></Route>
-        <Route path="weapons" element={<Weapons weapons={shop} />}></Route>
+        <Route path="weapons" element={<Weapons weapons={shop} handleDelete={handleDelete}/>}></Route>
         {/* <Route path="armor" element={<Armor armor={""} />}></Route> */}
       </Routes>
     </>
