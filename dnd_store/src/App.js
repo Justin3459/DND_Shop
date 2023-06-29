@@ -18,7 +18,7 @@ function App() {
     <>
       <Header shop={shop} dialogRef={dialogRef}/>
       <dialog ref={dialogRef}>
-        <New/>
+        <New onFormSubmited={onFormSubmit}/>
       </dialog>
     </>
   );

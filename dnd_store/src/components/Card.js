@@ -1,6 +1,9 @@
 import React from "react";
 
 function Card(items) {
+    const handleDelete = (e) => {console.log(e.target.id)
+
+    } 
   const weaponArray = items.items.weapons;
   const handleCard = weaponArray.map((item) => (
     <div key={item.id} className="card">
@@ -10,6 +13,7 @@ function Card(items) {
       <p>weight: {item.weight}</p>
       <p>properties: {item.properties}</p>
       <p>type: {item.type}</p>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   ));
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./CSS/New.css";
 
-function New() {
+function New({onFormSubmited}) {
   const onSubmit = (e) => {
     e.preventDefault();
     const formData = Object.fromEntries(new 
@@ -14,6 +14,8 @@ function New() {
       },
       body: JSON.stringify(formData),
     })
+    .then(r=>r.json())
+    .then(responseForm => onFormSubmited(responseForm))
   };
 
   return (
