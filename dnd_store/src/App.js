@@ -12,13 +12,17 @@ function App() {
       });
   }, []);
 
-  const dialogRef = useRef(null)
+  const dialogRef = useRef(null);
 
   return (
     <>
-      <Header shop={shop} dialogRef={dialogRef}/>
+      <Header shop={shop} dialogRef={dialogRef} />
       <dialog ref={dialogRef}>
-        <New onFormSubmited={onFormSubmit}/>
+        <New
+          onFormSubmited={() => {
+            dialogRef.current.close();
+          }}
+        />
       </dialog>
     </>
   );
