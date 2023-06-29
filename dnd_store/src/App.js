@@ -17,9 +17,9 @@ function App() {
   return (
     <>
       <Header shop={shop}/>
-      <dialog>
+      <dialog open>
         <New>
-          
+
         </New>
       </dialog>
     </>
