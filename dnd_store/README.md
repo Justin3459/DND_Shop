@@ -18,7 +18,7 @@
 
 1. git clone both repositories listed above
 2. cd into react-phase-2-json-template then code . to open repository in vscode
-3. In vscode terminal type $ json-server --watch db.json (ddOriginal.json does not work with application yet)
+3. In vscode terminal type $ json-server --watch ddOriginal.json 
 4. Open a new vscode by $ cd .. then $ cd dnd_store then type $ code .
 5. Inside vscode dnd_store terminal type $cd dnd_store 
 6. run $ npm start once inside dnd_store/dnd_store
