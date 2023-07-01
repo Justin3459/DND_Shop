@@ -16,14 +16,25 @@
 - JSON-Server: https://github.com/Justin3459/react-phase-2-json-template.git
 - Application: https://github.com/Justin3459/dnd_store.git
 
-
-
+1. git clone both repositories listed above
+2. cd into react-phase-2-json-template then code . to open repository in vscode
+3. In vscode terminal type $ json-server --watch db.json (ddOriginal.json does not work with application yet)
+4. Open a new vscode by $ cd .. then $ cd dnd_store then type $ code .
+5. Inside vscode dnd_store terminal type $cd dnd_store 
+6. run $ npm start once inside dnd_store/dnd_store
 
 ## Usage
 ========
+- Click on a link in the navigation bar to be directed to the desired page
+- Items should automatically populate on the screen 
+- To add an item to the list of cards  click the add button at the top of the page
+- To delete an item click the delete button that is located on the card
 
 ## Contribution
 =============== 
+- FlatIron School
+- The Road to React by Robin Wieruch
+- React Router v6: https://reactrouter.com/en/main/start/tutorial
 
 ## License
 ==========
