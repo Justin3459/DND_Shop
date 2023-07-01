@@ -10,3 +10,9 @@
 - Delete button to allow users to remove cards
 - Navigation bar that allows the user to switch pages
 - Home page allows users to select what page to be directed to
+
+## Installation
+===============
+- JSON-Server: https://github.com/Justin3459/react-phase-2-json-template.git
+- Application: https://github.com/Justin3459/dnd_store.git
+
