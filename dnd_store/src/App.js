@@ -12,6 +12,7 @@ function App() {
         setShop(data.map((item) => item));
       });
   }, []);
+
   const dialogRef = useRef(null);
   const onCardAdd = (cardAdd) => setShop([...shop, cardAdd])
   return (

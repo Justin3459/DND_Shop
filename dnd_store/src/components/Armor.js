@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import Card from "./Card";
 
-function Armor({armor}) {
-  console.log(armor)
+function Armor({ armor, handleDelete }) {
+  console.log(armor);
   return (
-    <h1>Test Armor</h1>
-  )
+    <>
+      <Card items={armor[0]} handleDelete={handleDelete} />
+    </>
+  );
 }
 
-export default Armor
+export default Armor;

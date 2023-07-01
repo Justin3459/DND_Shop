@@ -6,7 +6,7 @@ function Weapons({weapons, handleDelete}) {
     // const handleDelete = (id) => console.log(id)
 return (
     <>
-        <Card items={weapons} handleDelete={handleDelete}/>
+        <Card items={weapons[0]} handleDelete={handleDelete}/>
     </>
   );
 }
