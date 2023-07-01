@@ -16,3 +16,15 @@
 - JSON-Server: https://github.com/Justin3459/react-phase-2-json-template.git
 - Application: https://github.com/Justin3459/dnd_store.git
 
+
+
+
+## Usage
+========
+
+## Contribution
+=============== 
+
+## License
+==========
+- MIT License: https://mit-license.org/
