@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./Home";
 import Weapons from "./Weapons";
-// import Armor from "./Armor";
 import { Route, Routes, NavLink } from "react-router-dom";
 
 function Header({ shop, dialogRef, setShopItems }) {
@@ -21,14 +20,12 @@ function Header({ shop, dialogRef, setShopItems }) {
       <header className="Header">
         <div className="Title">
           <h1 > Item Store </h1>
-          {/* <input input="search"></input> */}
           <button onClick={handleModal} className="modal">Add</button>
         </div>
 
-        <nav>
+        <nav className="navbar">
           <NavLink to="/">Home</NavLink>
           <NavLink to="weapons">Weapons</NavLink>
-          {/* <NavLink to="armor">Armor</NavLink> */}
         </nav>
       </header>
       <Routes>
@@ -37,7 +34,6 @@ function Header({ shop, dialogRef, setShopItems }) {
           path="weapons"
           element={<Weapons weapons={shop} handleDelete={handleDelete} />}
         ></Route>
-        {/* <Route path="armor" element={<Armor armor={""} />}></Route> */}
       </Routes>
     </>
   );

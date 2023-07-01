@@ -27,7 +27,7 @@
 ========
 - Click on a link in the navigation bar to be directed to the desired page
 - Items should automatically populate on the screen 
-- To add an item to the list of cards  click the add button at the top of the page
+- To add an item to the list of cards  click the add button at the top of the page to exit out of modal press esc on keyboard
 - To delete an item click the delete button that is located on the card
 
 ## Contribution

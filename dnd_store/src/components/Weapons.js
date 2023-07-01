@@ -1,13 +1,12 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./Card/Card";
 
 
 function Weapons({weapons, handleDelete}) {
-    // const handleDelete = (id) => console.log(id)
 return (
-    <>
+    <div className="cardContainer">
         <Card items={weapons} handleDelete={handleDelete}/>
-    </>
+    </div>
   );
 }
 

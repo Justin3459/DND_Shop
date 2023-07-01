@@ -1,5 +1,5 @@
 import React from "react";
-import "./CSS/New.css";
+import "./New.css";
 
 function New({onFormSubmited}) {
   const onSubmit = (e) => {
@@ -18,6 +18,7 @@ function New({onFormSubmited}) {
     .then(responseForm => onFormSubmited(responseForm))
   };
   return (
+    <div className="formContainer">
     <form onSubmit={onSubmit} className="newItemForm">
       <label>
         Name:
@@ -44,9 +45,6 @@ function New({onFormSubmited}) {
         <select name="type">
           <option>Simple Weapon</option>
           <option>Martial Weapon</option>
-          {/* <option>Light Armor</option>
-          <option>Medium Armor</option>
-          <option>Heavy Armor</option> */}
         </select>
       </label>
       <label>
@@ -55,6 +53,7 @@ function New({onFormSubmited}) {
       </label>
       <button>Submit</button>
     </form>
+    </div>
   );
 }
 

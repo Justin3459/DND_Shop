@@ -22,3 +22,10 @@ allow user to delete
                 //pass task.id on onClick to be passed into function
                 <button onClick={()=>onDelete(task.id)}>Done!</button>
     )
+
+Add search functionality to Header <input input="search"/>
+Add <NavLink to="armor">Armor</NavLink> to header in nav
+Add <Route path="armor" element={<Armor armor={""} />}></Route> to header in Routes
+Add <h1 id='armorLink'> <NavLink to="armor">Armor</NavLink>  </h1> to Home in nav generate Armor link
+Add <Route path="armor" element={<Armor armor={""}/>}></Route> to Home in Routes
+Add <option>Light Armor</option>    <option>Medium Armor</option>   <option>Heavy Armor</option> to New to select 

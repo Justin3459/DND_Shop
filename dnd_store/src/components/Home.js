@@ -6,19 +6,15 @@ import Weapons from './Weapons';
 function Home() {
   return (
     <>
-    <div className="NavCard">
+    <div className="navContainer">
       <nav>
         <h1 id='weaponLink' >
             <NavLink to="weapons">Weapons</NavLink>
         </h1>
-        {/* <h1 id='armorLink'>
-            <NavLink to="armor">Armor</NavLink>
-        </h1> */}
       </nav>
     </div>
       <Routes>
-        <Route path="weapons" element={<Weapons weapons={""}/>}></Route>
-        {/* <Route path="armor" element={<Armor armor={""}/>}></Route> */}
+        <Route path="weapons" element={<Weapons/>}/>
       </Routes>
     </>
   )
