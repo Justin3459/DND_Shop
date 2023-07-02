@@ -24,8 +24,8 @@ function App() {
             dialogRef.current.close()
             onCardAdd(newShopData);
           }}
-          onCardAdd={onCardAdd}
-          dialogRef={dialogRef}
+          // onCardAdd={onCardAdd}
+          // dialogRef={dialogRef}
         />
       </dialog>
     </>

@@ -42,11 +42,11 @@ function New({onFormSubmited}) {
       <label>
         Type:
         <select name="type">
-          <option>Simple Weapon</option>
-          <option>Martial Weapon</option>
-          <option>Light Armor</option>
-          <option>Medium Armor</option>
-          <option>Heavy Armor</option>
+          <option className="simpleWeapons" name="simpleWeapons">Simple Weapon</option>
+          <option className="martialWeapons" name="martialWeapons">Martial Weapon</option>
+          <option className="lightArmor" name="lightArmor">Light Armor</option>
+          <option className="mediumArmor" name="mediumArmor">Medium Armor</option>
+          <option className="heavyArmor" name="heavyArmor">Heavy Armor</option>
         </select>
       </label>
       <label>

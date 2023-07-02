@@ -1,4 +1,4 @@
-.card {
+.cardContainer {
     height: 600px;
     width: 400px;
     overflow: hidden;
@@ -9,16 +9,16 @@
     padding-left: 105px;
     text-align: center;
 }
-.card img {
+.cardContainer img {
     height: auto;
     width: 200px;
 }
-.card p {
+.cardContainer p {
     text-align: center;
     font-weight: bold;
     font-size: large;
 }
-.card button {
+.cardContainer button {
     height: auto;
     width: 100px;    
 }
